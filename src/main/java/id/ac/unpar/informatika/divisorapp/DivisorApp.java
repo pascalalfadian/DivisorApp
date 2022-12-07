@@ -10,7 +10,7 @@ public class DivisorApp {
         System.out.print("Masukkan a: ");
         a = scanner.nextLong();
         System.out.print("Masukkan b: ");
-        b = scanner.nextLong();
+        b = scanner.nextLon();
         if (b == 0) {
             System.out.println("b tidak boleh nol");
         } else {
