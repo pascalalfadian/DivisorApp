@@ -1,17 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package id.ac.unpar.informatika.divisorapp;
 
-/**
- *
- * @author pascal
- */
+import java.util.Scanner;
+
 public class DivisorApp {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        long a, b;
+        System.out.print("Masukkan a: ");
+        a = scanner.nextLong();
+        System.out.print("Masukkan b: ");
+        b = scanner.nextLong();
+        if (b == 0) {
+            System.out.println("b tidak boleh nol");
+        } else {
+            System.out.println("a/b=" + a/b);
+        }
     }
 }
